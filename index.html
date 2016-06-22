@@ -69,18 +69,74 @@
     <p><code>mkdir -p foo/bar/baz</code> Créer l’arborescence foo/bar/baz.</p>
   </div>
 
-	<li>pwd (Print Working Directory) : Vous avviche l'emplacement du répertoire dans lequel vous vous trouvez.</li>
-	<li>mkdir : Permet de créer un nouveau répertoire.</li>
-	<li>rm : Supprimez de manière définitive un fichier (tapez "rm" puis le nom de votre fichier après un espace).</li>
-	<li>cp : Pour copier un fichier (tapez cp/ puis le chemin qui mène à votre fichier).</li>
-	<li>mv : Pour déplacer un fichier entre vos répertoires.</li>
-	<li>rmdir : Supprimez de manière définitive un de vos dossiers (rmdir, espace, puis le nom de votre dossier à supprimer)</li>
-	<li>top : Pour visualiser tous vos processus en cours d'exécution. Sortez de ce menu en tapant "q", puis en validant.</li>
-	<li>df -h : Cette commande vous affiche la liste de tous les volumes montés sur votre Mac ainsi que leurs caractéristiques.</li>
-	<li>ls : Affiche toute la liste de vos fichiers et dossiers.</li>
-	<li>ls -a : Affiche toute la liste de vos fichiers et dossiers + les éléments invisibles.</li>
-	<li>ls -a "nom d'un dossier" : Affiche toute la liste de tous les éléments qui sont dans le dossier de votre choix.</li>
-	<li>ls -l : Affiche toute la liste de vos fichiers et dossiers + les permissions, propriétaire et autres informations relatives au dossier en question.</li>
-</ul>
+  <div id="chown" class="block block-Chown green">
+    <h1>chown</h1>
+    <p>La commande <strong><i>chown</i></strong> permet de changer le propriétaire d'un fichier ou d'un répertoire.</p>
+    <p><code>chown bob:admin foo.txt</code> Attribuer l’utilisateur bob et le groupe admin au fichier foo.txt.</p>
+  </div>
+
+<div id="chmod" class="block block-chmod light-green">
+    <h1>chmod</h1>
+    <p>La commande <strong><i>chmod</i></strong> permet de changer les droits d'un fichier ou d'un répertoire. Pour exécuter cette commande vous devez être le propriétaire du fichier ou être logué en root.</p>
+    <p><code>chmod u+w fichier</code> Ajouter les droits d'écriture au propriétaire (user, write)</p>
+    <p><code>chmod g+r fichier</code> Ajouter les droits de lecture au groupe du fichier (group, read)</p>
+    <p><code>chmod o-x fichier</code> Supprimer les droits d'exécution aux autres utilisateurs (other, execution)</p>
+    <p><code>chmod a+rw dossier</code> Ajouter les droits de lecture / écriture à tous (all)</p>
+    <p><code>chmod -R a+rx files</code> Ajouter les droits de lecture et d'exécution à tout ce que contient le repertoire dossier.</p>
+    <p><code>chmod 764 dossier</code> Tous les droits pour le propriétaire (7xx), lecture et ecriture pour le groupe (x6x) et lecture uniquement pour les autres (xx4).</p>
+    <p><code>chmod -R 755 dossier</code> Donner au propriétaire tous les droits (7xx), alors que seuls les droits de lecture et d'accès seront donnés aux autres (x55). Grace à l'option -R ces droits seront appliqués à tous les fichiers et dossiers contenus dans ce répertoire.</p>
+<table>
+  <tbody>
+      <tr>
+        <h1>Correspondances de représentation des droits</h1>
+      </tr>
+      <tr>
+        <th>Droit</th>
+        <th>Valeur alphanumérique</th>
+        <th>Valeur octale</th>
+    </tr>
+      <tr>
+        <td>aucun droit</td>
+        <td align="center"></td>
+        <td align="center">0</td>
+    </tr>
+      <tr>
+        <td>exécution seulement</td>
+        <td align="center">--x</td>
+        <td align="center">1</td>
+    </tr>
+      <tr>
+        <td>écriture seulement</td>
+        <td align="center">-w-</td>
+        <td align="center">2</td>
+    </tr>
+      <tr>
+        <td>ecriture et exécution</td>
+        <td align="center">-wx</td>
+        <td align="center">3</td>
+    </tr>
+      <tr>
+        <td>lecture seulement</td>
+        <td align="center">r--</td>
+        <td align="center">4</td>
+      </tr>
+      <tr>
+        <td>lecture et exécution</td>
+        <td align="center">r-x</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td>lecture et écriture</td>
+        <td align="center">rw-</td>
+        <td align="center">6</td>
+      </tr>
+      <tr>
+        <td>tous les droits (lecture, écriture et exécution)</td>
+        <td align="center">rwx</td>
+        <td align="center">7</td>
+      </tr>
+    </tbody>
+</table>
+  </div>
 </body>
 </html>

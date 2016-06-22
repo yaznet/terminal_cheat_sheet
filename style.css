@@ -1,5 +1,6 @@
 body {
-    background: #FFF none repeat scroll 0% 0%;
+    background: #FFF 
+    none repeat scroll 0% 0%;
     font-family: Georgia,Times New Roman,Times,serif;
     font-size: 23px;
     margin: 0px;
@@ -24,7 +25,20 @@ h1 {
     list-style-type: none;
     padding-right: 20px;
     font-size: 30px;
+    size: 30px;
 }
+
+a, a:visited {
+    color: #000;
+    font-size: 23px;
+    text-decoration: none;
+}
+a:hover {text-decoration: underline;}
+
+ul {list-style: none;}
+dl {width : 960px; margin: 30px auto;}
+dt {font-size: 27px;}
+
 
 .block {
     position: relative;
@@ -59,4 +73,29 @@ h1 {
 .dark-green {
     background-color: #607848;
     color: #D1E875;
+}
+
+.dark-green {
+    background-color: #607848;
+    color: #D1E875;
+}
+
+.green {
+    background-color: #789048;
+    color: #31440B;
+}
+
+.light-green {
+    background-color: #C0D860;
+    color: #29310B;
+}
+
+table {
+    width: 700px;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+table tr, table th, table td {
+    padding: 5px;
 }
