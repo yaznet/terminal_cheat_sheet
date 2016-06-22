@@ -90,6 +90,11 @@ dt {font-size: 27px;}
     color: #29310B;
 }
 
+.blue {
+    background-color: #65B7F4;
+    color: #06406C;
+}
+
 table {
     width: 700px;
     margin: 30px auto;
@@ -98,4 +103,13 @@ table {
 
 table tr, table th, table td {
     padding: 5px;
+}
+
+code {
+    background-color: #000;
+    font-style: normal;
+    border-radius: 15px;
+    color: white;
+    padding: 5px 15px;
+    font-family: menlo, monospace;
 }
