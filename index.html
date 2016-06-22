@@ -88,7 +88,7 @@
 <table>
   <tbody>
       <tr>
-        <h1>Correspondances de représentation des droits</h1>
+        <h2>Correspondances de représentation des droits</h2>
       </tr>
       <tr>
         <th>Droit</th>
@@ -137,6 +137,23 @@
       </tr>
     </tbody>
 </table>
+  </div>
+
+  <div id="grep" class="block block-grep blue">
+    <h1>grep</h1>
+    <p>La commande <strong><i>grep</i></strong> permet de rechercher une chaîne de caractères ou un motif dans un fichier.</p>
+      <p> Quelques options :
+      <ul>
+            <li>v : affiche les lignes ne contenant pas la chaîne.</li>
+            <li>c : compte le nombre de lignes contenant la chaîne.</li>
+            <li>n : retourne les lignes préfixées par leur numéro.</li>
+            <li>x : ligne correspondant exactement à la chaîne.</li>
+            <li>l : affiche le nom des fichiers qui contiennent la chaîne.</li>
+      </ul>
+      </p>
+    <p><code>grep 'text' foo.txt</code> Recherche l'occurence 'text' dans le fichier foo.txt.</p>
+    <p><code>grep -nri 'foobar' /project </code> Recherche toutes les occurences de 'foobar' dans le repertoire /project.</p>
+    <p><code>grep -nri '\(foo\|bar\|baz\)' /project </code> Recherche toutes les occurences à 'foo', 'bar' et 'baz' dans le repertoire /project.</p>
   </div>
 </body>
 </html>
