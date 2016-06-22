@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Commandes Terminal</title>
+</head>
+<body>
+<h1>Commandes Terminal</h1>
+<img src="img/terminal-logo.png" alt="Logo de Terminal" />
+<ul class="navlist">
+      <li><a href="#ls">ls</a></li>
+      <li><a href="#cd">cd</a></li>
+      <li><a href="#cp">cp</a></li>
+      <li><a href="#mv">mv</a></li>
+      <li><a href="#rm">rm</a></li>
+      <li><a href="#mkdir">mkdir</a></li>
+      <li><a href="#chmod">chmod</a></li>
+      <li><a href="#chown">chown</a></li>
+      <li><a href="#ssh">ssh</a></li>
+      <li><a href="#grep">grep</a></li>
+      <li><a href="#find">find</a></li>
+</ul>
+<div id="ls" class="block block-ls brown">
+    <h1>ls</h1>
+    <p>La commande <strong><i>ls</i></strong> permet d'afficher le contenu d'un répertoire.</p>
+    <p><code>ls -l</code> Afficher les informations de manière détaillée.</p>
+    <p><code>ls -a</code> Afficher les fichiers cachés.</p>
+    <p><code>ls -h</code> Afficher la taille des fichiers de facon lisible.</p>
+    <p><code>ls -r</code> Tri inversé.</p>
+    <p><code>ls -t</code> Trier les fichiers par date du plus récent au plus ancien.</p>
+    <p><code>ls -S</code> Trier par taille décroissante.</p>
+    <p><code>ls -la</code> Afficher tous les fichiers y compris les fichiers cachés.</p>
+    <p><code>ls -lhS</code> Afficher les informations des fichiers, avec des tailles lisibles le tout ordonné du plus grand au plus petit.</p>
+  </div>
+
+  <div id="cd" class="block block-cd cream">
+    <h1>cd</h1>
+    <p>La navigation d’un répertoire à un autre s’effectue avec la commande <strong><i>cd</i></strong> succédée du nom du répertoire.</p>
+    <p><code>cd /</code> Permet de se retrouver à la racine du disque.</p>
+    <p><code>cd ~</code> ou <code>cd</code> Accéder directement au répertoire de l’utilisateur.</p>
+    <p><code>cd /var/www/</code> Aller dans le répertoire /var/www.</p>
+    <p><code>cd ..</code> Remonter dans le répertoire parent à partir de là où vous êtes.</p>
+    <p><code>cd -</code> Permet de revenir au répertoire précédent.</p>
+    <p><code>pwd</code> Renvoyer le chemin absolu du répertoire courant ce qui est utile puisqu’en général le shell n’affiche que le nom du répertoire courant.</p>
+  </div>
+  
+	<li>pwd (Print Working Directory) : Vous avviche l'emplacement du répertoire dans lequel vous vous trouvez.</li>
+	<li>mkdir : Permet de créer un nouveau répertoire.</li>
+	<li>rm : Supprimez de manière définitive un fichier (tapez "rm" puis le nom de votre fichier après un espace).</li>
+	<li>cp : Pour copier un fichier (tapez cp/ puis le chemin qui mène à votre fichier).</li>
+	<li>mv : Pour déplacer un fichier entre vos répertoires.</li>
+	<li>rmdir : Supprimez de manière définitive un de vos dossiers (rmdir, espace, puis le nom de votre dossier à supprimer)</li>
+	<li>top : Pour visualiser tous vos processus en cours d'exécution. Sortez de ce menu en tapant "q", puis en validant.</li>
+	<li>df -h : Cette commande vous affiche la liste de tous les volumes montés sur votre Mac ainsi que leurs caractéristiques.</li>
+	<li>ls : Affiche toute la liste de vos fichiers et dossiers.</li>
+	<li>ls -a : Affiche toute la liste de vos fichiers et dossiers + les éléments invisibles.</li>
+	<li>ls -a "nom d'un dossier" : Affiche toute la liste de tous les éléments qui sont dans le dossier de votre choix.</li>
+	<li>ls -l : Affiche toute la liste de vos fichiers et dossiers + les permissions, propriétaire et autres informations relatives au dossier en question.</li>
+</ul>
+</body>
+</html>
