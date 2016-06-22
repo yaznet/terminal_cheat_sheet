@@ -5,6 +5,7 @@ body {
     margin: 0px;
     padding: 0px;
     color: #000;
+    text-align: center;
 }
 
 img {
@@ -18,7 +19,7 @@ h1 {
 	text-align: center;
 }
 
-.navlist li {
+.navlist li { 
     display: inline;
     list-style-type: none;
     padding-right: 20px;
@@ -29,8 +30,8 @@ h1 {
     position: relative;
     margin: auto 0px;
     width: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #FFF;
     color: #000;
 }
@@ -43,4 +44,19 @@ h1 {
 .cream {
     background-color: #FCEBB6;
     color: #5E412F;
+}
+
+.blue {
+    background-color: #65B7F4;
+    color: #06406C;
+}
+
+.dark-blue {
+    background-color: #06406C;
+    color: #65B7F4;
+}
+
+.dark-green {
+    background-color: #607848;
+    color: #D1E875;
 }

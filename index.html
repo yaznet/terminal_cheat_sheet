@@ -44,7 +44,31 @@
     <p><code>cd -</code> Permet de revenir au répertoire précédent.</p>
     <p><code>pwd</code> Renvoyer le chemin absolu du répertoire courant ce qui est utile puisqu’en général le shell n’affiche que le nom du répertoire courant.</p>
   </div>
-  
+
+  <div id="cp" class="block block-cp blue">
+    <h1>cp</h1>
+    <p>Pour créer une copie d’un fichier, on utilise la commande <strong><i>cp</i></strong>.</p>
+    <p><code>cp foo/bar.txt baz/</code> Copier le fichier bar.txt dans le répertoire baz.</p><p>
+    </p><p><code>cp -r foo/ baz/</code> Copier des répertoires entiers (note : si baz existe, la cible sera baz/foo/).</p>
+  </div>
+
+  <div id="mv" class="block block-mv dark-blue">
+    <h1>mv</h1>
+    <p>Déplacer un fichier est aussi simple que de le copier, pour cela il faut utiliser la commande <strong><i>mv</i></strong>. Cette commande permet aussi de renommer vos fichiers.</p>
+    <p><code>mv foo/bar.txt baz/</code> Déplacer le fichier bar.txt dans le répertoire baz.</p>
+    <p><code>mv foo_bar.txt foo_baz.txt</code> Renommer le fichier foo_bar.txt en foo_baz.txt.</p>
+  </div>
+
+  <div id="mkdir" class="block block-mkdir dark-green">
+    <h1>mkdir</h1>
+    <p>Pour créer un répertoire il suffit d’utiliser la commande <strong><i>mkdir</i></strong>. Celle-ci vous permettra de créer un répertoire à l’emplacement où vous êtes ou l’emplacement précisé en argument de la commande.</p>
+    <p><code>mkdir -v</code> Retourner des informations lors de la création d'un répertoire.</p>
+    <p><code>mkdir -p</code> Cette option permet de créer une arborescence complète.</p>
+    <p><code>mkdir foo</code> Créer le répertoire foo.</p>
+    <p><code>mkdir -v foo /tmp/bar</code> Créer les répertoires foo et /tmp/bar.</p>
+    <p><code>mkdir -p foo/bar/baz</code> Créer l’arborescence foo/bar/baz.</p>
+  </div>
+
 	<li>pwd (Print Working Directory) : Vous avviche l'emplacement du répertoire dans lequel vous vous trouvez.</li>
 	<li>mkdir : Permet de créer un nouveau répertoire.</li>
 	<li>rm : Supprimez de manière définitive un fichier (tapez "rm" puis le nom de votre fichier après un espace).</li>
