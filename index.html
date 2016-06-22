@@ -17,7 +17,6 @@
       <li><a href="#mkdir">mkdir</a></li>
       <li><a href="#chmod">chmod</a></li>
       <li><a href="#chown">chown</a></li>
-      <li><a href="#ssh">ssh</a></li>
       <li><a href="#grep">grep</a></li>
       <li><a href="#find">find</a></li>
 </ul>
@@ -57,6 +56,14 @@
     <p>Déplacer un fichier est aussi simple que de le copier, pour cela il faut utiliser la commande <strong><i>mv</i></strong>. Cette commande permet aussi de renommer vos fichiers.</p>
     <p><code>mv foo/bar.txt baz/</code> Déplacer le fichier bar.txt dans le répertoire baz.</p>
     <p><code>mv foo_bar.txt foo_baz.txt</code> Renommer le fichier foo_bar.txt en foo_baz.txt.</p>
+  </div>
+
+  <div id="rm" class="block block-rm white">
+    <h1>rm</h1>
+    <p>Pour effacer un fichier ou un répertoire on utilise la commande <strong><i>rm</i></strong>.</p>
+    <p><code>rm *.txt</code> Supprimer tous les fichiers ayant pour extension txt.</p>
+    <p><code>rm foo.txt bar.txt</code> Supprimer les fichiers foo.txt et bar.txt.</p>
+    <p><code>rm -rf baz/</code> Supprimer le répertoire baz et tout son contenu.</p>
   </div>
 
   <div id="mkdir" class="block block-mkdir dark-green">
@@ -155,5 +162,10 @@
     <p><code>grep -nri 'foobar' /project </code> Recherche toutes les occurences de 'foobar' dans le repertoire /project.</p>
     <p><code>grep -nri '\(foo\|bar\|baz\)' /project </code> Recherche toutes les occurences à 'foo', 'bar' et 'baz' dans le repertoire /project.</p>
   </div>
+
+<footer>
+      <p>Copyright Yazweb - Tous droits réservés - Inspired by <a href="http://juliend.github.io/linux-cheatsheet/#find">Juliend</a></p> <a href="mailto:youcef.ayad.zeddam@gmail.com">Contact</a></p>
+</footer>
+
 </body>
 </html>
