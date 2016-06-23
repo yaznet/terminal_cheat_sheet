@@ -45,8 +45,10 @@ dt {font-size: 27px;}
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 10px;
     background-color: #FFF;
     color: #000;
+    text-align: left;
 }
 
 .brown {
