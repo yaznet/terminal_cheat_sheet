@@ -6,20 +6,20 @@
 	<title>Commandes Terminal</title>
 </head>
 <body>
-<h1>Commandes Terminal</h1>
-<img src="img/terminal-logo.png" alt="Logo de Terminal" />
-<ul class="navlist">
-      <li><a href="#ls">ls</a></li>
-      <li><a href="#cd">cd</a></li>
-      <li><a href="#cp">cp</a></li>
-      <li><a href="#mv">mv</a></li>
-      <li><a href="#rm">rm</a></li>
-      <li><a href="#mkdir">mkdir</a></li>
-      <li><a href="#chmod">chmod</a></li>
-      <li><a href="#chown">chown</a></li>
-      <li><a href="#grep">grep</a></li>
-</ul>
-<div id="ls" class="block block-ls brown">
+  <h1>Commandes Terminal</h1>
+  <img src="img/terminal-logo.png" alt="Logo de Terminal" />
+  <ul class="navlist">
+    <li><a href="#ls">ls</a></li>
+    <li><a href="#cd">cd</a></li>
+    <li><a href="#cp">cp</a></li>
+    <li><a href="#mv">mv</a></li>
+    <li><a href="#rm">rm</a></li>
+    <li><a href="#mkdir">mkdir</a></li>
+    <li><a href="#chmod">chmod</a></li>
+    <li><a href="#chown">chown</a></li>
+    <li><a href="#grep">grep</a></li>
+  </ul>
+  <div id="ls" class="block brown">
     <h1>ls</h1>
     <p>La commande <strong><i>ls</i></strong> permet d'afficher le contenu d'un répertoire.</p>
     <p><code>ls -l</code> Afficher les informations de manière détaillée.</p>
@@ -32,7 +32,7 @@
     <p><code>ls -lhS</code> Afficher les informations des fichiers, avec des tailles lisibles le tout ordonné du plus grand au plus petit.</p>
   </div>
 
-  <div id="cd" class="block block-cd cream">
+  <div id="cd" class="block cream">
     <h1>cd</h1>
     <p>La navigation d’un répertoire à un autre s’effectue avec la commande <strong><i>cd</i></strong> succédée du nom du répertoire.</p>
     <p><code>cd /</code> Permet de se retrouver à la racine du disque.</p>
@@ -43,56 +43,56 @@
     <p><code>pwd</code> Renvoyer le chemin absolu du répertoire courant ce qui est utile puisqu’en général le shell n’affiche que le nom du répertoire courant.</p>
   </div>
 
-  <div id="cp" class="block block-cp blue">
+  <div id="cp" class="block blue">
     <h1>cp</h1>
     <p>Pour créer une copie d’un fichier, on utilise la commande <strong><i>cp</i></strong>.</p>
     <p><code>cp foo/bar.txt baz/</code> Copier le fichier bar.txt dans le répertoire baz.</p><p>
-    </p><p><code>cp -r foo/ baz/</code> Copier des répertoires entiers (note : si baz existe, la cible sera baz/foo/).</p>
-  </div>
+  </p><p><code>cp -r foo/ baz/</code> Copier des répertoires entiers (note : si baz existe, la cible sera baz/foo/).</p>
+</div>
 
-  <div id="mv" class="block block-mv dark-blue">
-    <h1>mv</h1>
-    <p>Déplacer un fichier est aussi simple que de le copier, pour cela il faut utiliser la commande <strong><i>mv</i></strong>. Cette commande permet aussi de renommer vos fichiers.</p>
-    <p><code>mv foo/bar.txt baz/</code> Déplacer le fichier bar.txt dans le répertoire baz.</p>
-    <p><code>mv foo_bar.txt foo_baz.txt</code> Renommer le fichier foo_bar.txt en foo_baz.txt.</p>
-  </div>
+<div id="mv" class="block dark-blue">
+  <h1>mv</h1>
+  <p>Déplacer un fichier est aussi simple que de le copier, pour cela il faut utiliser la commande <strong><i>mv</i></strong>. Cette commande permet aussi de renommer vos fichiers.</p>
+  <p><code>mv foo/bar.txt baz/</code> Déplacer le fichier bar.txt dans le répertoire baz.</p>
+  <p><code>mv foo_bar.txt foo_baz.txt</code> Renommer le fichier foo_bar.txt en foo_baz.txt.</p>
+</div>
 
-  <div id="rm" class="block block-rm white">
-    <h1>rm</h1>
-    <p>Pour effacer un fichier ou un répertoire on utilise la commande <strong><i>rm</i></strong>.</p>
-    <p><code>rm *.txt</code> Supprimer tous les fichiers ayant pour extension txt.</p>
-    <p><code>rm foo.txt bar.txt</code> Supprimer les fichiers foo.txt et bar.txt.</p>
-    <p><code>rm -rf baz/</code> Supprimer le répertoire baz et tout son contenu.</p>
-  </div>
+<div id="rm" class="block white">
+  <h1>rm</h1>
+  <p>Pour effacer un fichier ou un répertoire on utilise la commande <strong><i>rm</i></strong>.</p>
+  <p><code>rm *.txt</code> Supprimer tous les fichiers ayant pour extension txt.</p>
+  <p><code>rm foo.txt bar.txt</code> Supprimer les fichiers foo.txt et bar.txt.</p>
+  <p><code>rm -rf baz/</code> Supprimer le répertoire baz et tout son contenu.</p>
+</div>
 
-  <div id="mkdir" class="block block-mkdir dark-green">
-    <h1>mkdir</h1>
-    <p>Pour créer un répertoire il suffit d’utiliser la commande <strong><i>mkdir</i></strong>. Celle-ci vous permettra de créer un répertoire à l’emplacement où vous êtes ou l’emplacement précisé en argument de la commande.</p>
-    <p><code>mkdir -v</code> Retourner des informations lors de la création d'un répertoire.</p>
-    <p><code>mkdir -p</code> Cette option permet de créer une arborescence complète.</p>
-    <p><code>mkdir foo</code> Créer le répertoire foo.</p>
-    <p><code>mkdir -v foo /tmp/bar</code> Créer les répertoires foo et /tmp/bar.</p>
-    <p><code>mkdir -p foo/bar/baz</code> Créer l’arborescence foo/bar/baz.</p>
-  </div>
+<div id="mkdir" class="block dark-green">
+  <h1>mkdir</h1>
+  <p>Pour créer un répertoire il suffit d’utiliser la commande <strong><i>mkdir</i></strong>. Celle-ci vous permettra de créer un répertoire à l’emplacement où vous êtes ou l’emplacement précisé en argument de la commande.</p>
+  <p><code>mkdir -v</code> Retourner des informations lors de la création d'un répertoire.</p>
+  <p><code>mkdir -p</code> Cette option permet de créer une arborescence complète.</p>
+  <p><code>mkdir foo</code> Créer le répertoire foo.</p>
+  <p><code>mkdir -v foo /tmp/bar</code> Créer les répertoires foo et /tmp/bar.</p>
+  <p><code>mkdir -p foo/bar/baz</code> Créer l’arborescence foo/bar/baz.</p>
+</div>
 
-  <div id="chown" class="block block-Chown green">
-    <h1>chown</h1>
-    <p>La commande <strong><i>chown</i></strong> permet de changer le propriétaire d'un fichier ou d'un répertoire.</p>
-    <p><code>chown bob:admin foo.txt</code> Attribuer l’utilisateur bob et le groupe admin au fichier foo.txt.</p>
-  </div>
+<div id="chown" class="block green">
+  <h1>chown</h1>
+  <p>La commande <strong><i>chown</i></strong> permet de changer le propriétaire d'un fichier ou d'un répertoire.</p>
+  <p><code>chown bob:admin foo.txt</code> Attribuer l’utilisateur bob et le groupe admin au fichier foo.txt.</p>
+</div>
 
-<div id="chmod" class="block block-chmod light-green">
-    <h1>chmod</h1>
-    <p>La commande <strong><i>chmod</i></strong> permet de changer les droits d'un fichier ou d'un répertoire. Pour exécuter cette commande vous devez être le propriétaire du fichier ou être logué en root.</p>
-    <p><code>chmod u+w fichier</code> Ajouter les droits d'écriture au propriétaire (user, write)</p>
-    <p><code>chmod g+r fichier</code> Ajouter les droits de lecture au groupe du fichier (group, read)</p>
-    <p><code>chmod o-x fichier</code> Supprimer les droits d'exécution aux autres utilisateurs (other, execution)</p>
-    <p><code>chmod a+rw dossier</code> Ajouter les droits de lecture / écriture à tous (all)</p>
-    <p><code>chmod -R a+rx files</code> Ajouter les droits de lecture et d'exécution à tout ce que contient le repertoire dossier.</p>
-    <p><code>chmod 764 dossier</code> Tous les droits pour le propriétaire (7xx), lecture et ecriture pour le groupe (x6x) et lecture uniquement pour les autres (xx4).</p>
-    <p><code>chmod -R 755 dossier</code> Donner au propriétaire tous les droits (7xx), alors que seuls les droits de lecture et d'accès seront donnés aux autres (x55). Grace à l'option -R ces droits seront appliqués à tous les fichiers et dossiers contenus dans ce répertoire.</p>
-<table>
-  <tbody>
+<div id="chmod" class="block light-green">
+  <h1>chmod</h1>
+  <p>La commande <strong><i>chmod</i></strong> permet de changer les droits d'un fichier ou d'un répertoire. Pour exécuter cette commande vous devez être le propriétaire du fichier ou être logué en root.</p>
+  <p><code>chmod u+w fichier</code> Ajouter les droits d'écriture au propriétaire (user, write)</p>
+  <p><code>chmod g+r fichier</code> Ajouter les droits de lecture au groupe du fichier (group, read)</p>
+  <p><code>chmod o-x fichier</code> Supprimer les droits d'exécution aux autres utilisateurs (other, execution)</p>
+  <p><code>chmod a+rw dossier</code> Ajouter les droits de lecture / écriture à tous (all)</p>
+  <p><code>chmod -R a+rx files</code> Ajouter les droits de lecture et d'exécution à tout ce que contient le repertoire dossier.</p>
+  <p><code>chmod 764 dossier</code> Tous les droits pour le propriétaire (7xx), lecture et ecriture pour le groupe (x6x) et lecture uniquement pour les autres (xx4).</p>
+  <p><code>chmod -R 755 dossier</code> Donner au propriétaire tous les droits (7xx), alors que seuls les droits de lecture et d'accès seront donnés aux autres (x55). Grace à l'option -R ces droits seront appliqués à tous les fichiers et dossiers contenus dans ce répertoire.</p>
+  <table>
+    <tbody>
       <tr>
         <h2>Correspondances de représentation des droits</h2>
       </tr>
@@ -100,27 +100,27 @@
         <th>Droit</th>
         <th>Valeur alphanumérique</th>
         <th>Valeur octale</th>
-    </tr>
+      </tr>
       <tr>
         <td>aucun droit</td>
         <td align="center"></td>
         <td align="center">0</td>
-    </tr>
+      </tr>
       <tr>
         <td>exécution seulement</td>
         <td align="center">--x</td>
         <td align="center">1</td>
-    </tr>
+      </tr>
       <tr>
         <td>écriture seulement</td>
         <td align="center">-w-</td>
         <td align="center">2</td>
-    </tr>
+      </tr>
       <tr>
         <td>ecriture et exécution</td>
         <td align="center">-wx</td>
         <td align="center">3</td>
-    </tr>
+      </tr>
       <tr>
         <td>lecture seulement</td>
         <td align="center">r--</td>
@@ -142,28 +142,28 @@
         <td align="center">7</td>
       </tr>
     </tbody>
-</table>
-  </div>
+  </table>
+</div>
 
-  <div id="grep" class="block block-grep blue">
-    <h1>grep</h1>
-    <p>La commande <strong><i>grep</i></strong> permet de rechercher une chaîne de caractères ou un motif dans un fichier.</p>
-      <p> Quelques options :
-      <ul>
-            <li>v : affiche les lignes ne contenant pas la chaîne.</li>
-            <li>c : compte le nombre de lignes contenant la chaîne.</li>
-            <li>n : retourne les lignes préfixées par leur numéro.</li>
-            <li>x : ligne correspondant exactement à la chaîne.</li>
-            <li>l : affiche le nom des fichiers qui contiennent la chaîne.</li>
-      </ul>
-      </p>
-    <p><code>grep 'text' foo.txt</code> Recherche l'occurence 'text' dans le fichier foo.txt.</p>
-    <p><code>grep -nri 'foobar' /project </code> Recherche toutes les occurences de 'foobar' dans le repertoire /project.</p>
-    <p><code>grep -nri '\(foo\|bar\|baz\)' /project </code> Recherche toutes les occurences à 'foo', 'bar' et 'baz' dans le repertoire /project.</p>
-  </div>
+<div id="grep" class="block blue">
+  <h1>grep</h1>
+  <p>La commande <strong><i>grep</i></strong> permet de rechercher une chaîne de caractères ou un motif dans un fichier.</p>
+  <p> Quelques options :
+    <ul>
+      <li>v : affiche les lignes ne contenant pas la chaîne.</li>
+      <li>c : compte le nombre de lignes contenant la chaîne.</li>
+      <li>n : retourne les lignes préfixées par leur numéro.</li>
+      <li>x : ligne correspondant exactement à la chaîne.</li>
+      <li>l : affiche le nom des fichiers qui contiennent la chaîne.</li>
+    </ul>
+  </p>
+  <p><code>grep 'text' foo.txt</code> Recherche l'occurence 'text' dans le fichier foo.txt.</p>
+  <p><code>grep -nri 'foobar' /project </code> Recherche toutes les occurences de 'foobar' dans le repertoire /project.</p>
+  <p><code>grep -nri '\(foo\|bar\|baz\)' /project </code> Recherche toutes les occurences à 'foo', 'bar' et 'baz' dans le repertoire /project.</p>
+</div>
 
 <footer>
-      <p>Yazweb - Copied <a href="http://juliend.github.io/linux-cheatsheet/">Juliend</a> - <a href="mailto:youcef.ayad.zeddam@gmail.com">Contact</a></p>
+  <p>Yazweb - Copied <a href="http://juliend.github.io/linux-cheatsheet/">Juliend</a> - <a href="mailto:youcef.ayad.zeddam@gmail.com">Contact</a></p>
 </footer>
 
 </body>
